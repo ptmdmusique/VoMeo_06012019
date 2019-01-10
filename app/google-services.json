@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "602617191348",
+    "firebase_url": "https://vomeo-dghan.firebaseio.com",
+    "project_id": "vomeo-dghan",
+    "storage_bucket": "vomeo-dghan.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:602617191348:android:f80ae3ca96f92fd7",
+        "android_client_info": {
+          "package_name": "com.dghan.vomeo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "602617191348-b9jpfhsg25cobr9k8ut5s1m5pmf59rg4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dghan.vomeo",
+            "certificate_hash": "2352b21616ea0f7f4943a1f2494d00782d4cd412"
+          }
+        },
+        {
+          "client_id": "602617191348-h23fj37sbb2af7sreuh887iii3tl8s1b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzANLJWJjdmbnkwM45dXQO9hKKPauO5nM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "602617191348-h23fj37sbb2af7sreuh887iii3tl8s1b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,31 @@
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" android:oneshot="true">
+    <item android:drawable="@drawable/rightfoot" android:duration="1000" ></item>
+    <item android:drawable="@drawable/initexe" android:duration="1000"></item>
+    <item android:drawable="@drawable/hang1" android:duration="100"></item>
+    <item android:drawable="@drawable/hang2" android:duration="100"></item>
+    <item android:drawable="@drawable/hang3" android:duration="100"></item>
+    <item android:drawable="@drawable/hang4" android:duration="100"></item>
+    <item android:drawable="@drawable/hang5" android:duration="100"></item>
+    <item android:drawable="@drawable/hang6" android:duration="100"></item>
+    <item android:drawable="@drawable/hang7" android:duration="100"></item>
+    <item android:drawable="@drawable/hang8" android:duration="100"></item>
+    <item android:drawable="@drawable/hang9" android:duration="100"></item>
+    <item android:drawable="@drawable/hang10" android:duration="100"></item>
+    <item android:drawable="@drawable/hang11" android:duration="100"></item>
+    <item android:drawable="@drawable/hang12" android:duration="1000"></item>
+    <item android:drawable="@drawable/choke1" android:duration="50"></item>
+    <item android:drawable="@drawable/choke2" android:duration="50"></item>
+    <item android:drawable="@drawable/choke3" android:duration="50"></item>
+    <item android:drawable="@drawable/choke4" android:duration="50"></item>
+    <item android:drawable="@drawable/choke5" android:duration="50"></item>
+    <item android:drawable="@drawable/choke1" android:duration="50"></item>
+    <item android:drawable="@drawable/choke2" android:duration="50"></item>
+    <item android:drawable="@drawable/choke3" android:duration="50"></item>
+    <item android:drawable="@drawable/choke4" android:duration="50"></item>
+    <item android:drawable="@drawable/choke5" android:duration="50"></item>
+    <item android:drawable="@drawable/death1" android:duration="1000"></item>
+    <item android:drawable="@drawable/death2" android:duration="100"></item>
+    <item android:drawable="@drawable/death3" android:duration="100"></item>
+    <item android:drawable="@drawable/death4" android:duration="100"></item>
+
+</animation-list>

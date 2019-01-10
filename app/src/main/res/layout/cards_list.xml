@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:paddingHorizontal="10dp"
+    android:id="@+id/custom_card_list">
+
+    <ImageView
+        android:id="@+id/cImage"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:scaleType="fitCenter"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/cloud"
+        android:background="@null" />
+    <!--120dp-->
+    <TextView
+        android:id="@+id/cName"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:paddingStart="10dp"
+        android:paddingTop="5dp"
+        android:layout_alignParentTop="true"
+        android:text="word"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/cImage"/>
+
+    <TextView
+        android:id="@+id/cDes"
+        android:layout_below="@id/cName"
+        android:layout_toRightOf="@id/cImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="10dp"
+        android:text="meaning"
+        />
+
+    <ImageButton
+        android:id="@+id/speaker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/speaker"
+        android:background="@null"
+        android:layout_alignParentEnd="true"
+        android:padding="5dp"/>
+    <ImageButton
+        android:id="@+id/note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:padding="5dp"
+        android:layout_toStartOf="@id/speaker"
+        android:src="@drawable/note_button"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/favorite"
+        android:src="@drawable/empty_heart_button"
+        android:padding="5dp"
+        android:background="@null"
+        android:layout_toStartOf="@id/note"/>
+    <!--<ImageButton-->
+        <!--android:id="@+id/note"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:background="@null"-->
+        <!--android:onClick="onClick"-->
+        <!--android:padding="5dp"-->
+        <!--android:scaleType="fitCenter"-->
+        <!--android:src="@drawable/note" />-->
+
+    <!--<ImageButton-->
+        <!--android:id="@+id/favorite"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_toLeftOf="@id/note"-->
+        <!--android:background="@null"-->
+        <!--android:onClick="onClick"-->
+        <!--android:padding="5dp"-->
+        <!--android:scaleType="fitCenter"-->
+        <!--android:src="@drawable/favorite" />-->
+
+    <!--<ImageButton-->
+        <!--android:id="@+id/speaker"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_toLeftOf="@id/favorite"-->
+        <!--android:background="@null"-->
+        <!--android:onClick="onClick"-->
+        <!--android:padding="5dp"-->
+        <!--android:src="@drawable/speaker" />-->
+
+</RelativeLayout>

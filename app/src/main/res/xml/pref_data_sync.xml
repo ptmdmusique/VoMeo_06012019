@@ -1,0 +1,58 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:key="user_category"
+        android:title="USER">
+        <EditTextPreference
+            android:dialogTitle="Your Name"
+            android:dialogMessage="Enter your full name"
+            android:inputType="textCapWords"
+            android:title="Name"
+            android:key="key_full_name"
+            android:summary="Robbin Johnson">
+
+        </EditTextPreference>
+
+        <EditTextPreference
+            android:dialogTitle="Your Email"
+            android:dialogMessage="Enter your email"
+            android:inputType="textEmailAddress"
+            android:title="Email"
+            android:key="key_email"
+            android:summary="RobbinJohnson@gmail.com">
+
+        </EditTextPreference>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="ALARM">
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="enable_alarm"
+            android:title="Enable alarm"
+            android:summary="Enable or disable sleep time"/>
+
+        <ListPreference
+            android:dependency="enable_alarm"
+            android:key="key_set_time"
+            android:title="Set time"
+            android:summary="9:00 PM"
+            android:entries="@array/timerList"
+            android:entryValues="@array/timerListValue"/>
+            />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="THEME">
+        <ListPreference
+            android:key="key_theme"
+            android:title="Change theme"
+            android:summary="Press to show list"
+            android:entries="@array/typeOfTheme"
+            android:entryValues="@array/typeOfThemeValues"
+            />
+
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

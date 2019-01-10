@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:id="@+id/headerImage"
+    android:background="@drawable/header"
+    android:padding="30dp">
+
+    <ImageButton
+        android:id="@+id/user_image"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="20dp"
+        android:background="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/avatar" />
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Robbin Johnson"
+        android:textColor="#ffff"
+        android:textStyle="bold"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="10dp"
+        android:clickable="true"
+        android:editable="true"
+        android:focusable="true"
+        android:id="@+id/user_name"
+        />
+
+</LinearLayout>

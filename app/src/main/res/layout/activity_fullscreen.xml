@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer"
+    android:background="#FFFF"
+    tools:context=".FullscreenActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relative_layout">
+        <!-- The primary full-screen view. This can be replaced with whatever view
+             is needed to present your content, e.g. VideoView, SurfaceView,
+             TextureView, etc. -->
+        <TextView
+            android:id="@+id/fullscreen_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold|italic"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="30dp"
+            android:text="Cards"
+            android:id="@+id/sub"
+            android:padding="10dp"
+            android:textSize="30sp"/>
+
+        <ImageButton
+            android:padding="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:layout_marginTop="30dp"
+            android:layout_toLeftOf="@id/spinner"
+            android:id="@+id/shuffle"
+            android:nextFocusRight="@id/spinner"
+            android:src="@drawable/loop"
+            tools:ignore="ContentDescription" />
+        <Spinner
+            android:padding="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner"
+            >
+        </Spinner>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="10dp"
+            android:layout_below="@id/sub"
+            android:orientation="vertical">
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/CList"
+                >
+            </ListView>
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="80dp" />
+        </LinearLayout>
+        <!--android:layout_above="@+id/addBtn"-->
+        <!-- This FrameLayout insets its children based on system windows using
+             android:fitsSystemWindows. -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true">
+
+            <LinearLayout
+                android:id="@+id/fullscreen_content_controls"
+                style="?metaButtonBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:background="@color/black_overlay"
+                android:orientation="horizontal"
+                tools:ignore="UselessParent">
+
+                <TextView
+                    android:id="@+id/addBtn"
+                    android:textColor="#FFFF"
+                    android:text="Report Bug"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:clickable="true" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/black_circle_button"
+            app:backgroundTint="#000"
+            app:elevation="5dp"
+            app:fabSize="normal"
+            android:visibility="invisible"/>
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_dismiss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/black_circle_button"
+            app:backgroundTint="#000"
+            app:elevation="5dp"
+            app:fabSize="normal"
+            android:visibility="invisible"/>
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="110dp"
+            android:id="@+id/game_center"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/game"
+            android:backgroundTint="#6f6"
+            app:fabSize="normal"
+            android:visibility="invisible"/>
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            app:fabSize="normal"
+            android:id="@+id/test"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/test"
+            android:backgroundTint="#6f6"
+            android:visibility="invisible"/>
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/flashcard"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="110dp"
+            android:backgroundTint="#6f6"
+            app:fabSize="normal"
+            android:src="@drawable/file"
+            android:visibility="invisible"/>
+    </RelativeLayout>
+
+    <android.support.design.widget.NavigationView
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        app:headerLayout="@layout/header"
+        app:menu="@menu/nav_menu"
+        android:id="@+id/navigation_view"
+        android:layout_gravity="start"
+        android:background="#ffffff">
+
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>

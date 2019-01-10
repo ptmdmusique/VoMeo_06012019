@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HangmanActivity"
+    android:orientation="vertical"
+    android:background="#5769C5">
+
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:adjustViewBounds="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="30dp"
+            />
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/answer"
+    android:background="#5769C5"
+    android:textColor="#5769C5"
+    android:gravity="center"
+    android:layout_below="@id/imageView"
+    >
+
+</LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/keyboard">
+        <android.inputmethodservice.KeyboardView
+            android:id="@+id/keyboardview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:keyPreviewHeight="0dp"
+            android:foregroundGravity="center"
+            android:background="#7887D0"
+            android:keyBackground="@color/colorKey"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:visibility="visible"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
+
+    <!-- android:src="@drawable/android_hangman_bg" -->

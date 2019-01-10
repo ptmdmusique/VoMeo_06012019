@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:src="@drawable/pastel_gradient_background"
+        android:layout_alignParentTop="true"
+        android:id="@+id/bar"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/bar">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:layout_gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/flashcard_word"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:text="word"
+                android:textSize="30sp"
+                android:paddingStart="10dp"
+                android:textAlignment="center"/>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/speaker_button"
+                android:id="@+id/flashcard_speaker_button"
+                android:background="@null"
+                android:padding="20dp"
+                />
+        </RelativeLayout>
+    </FrameLayout>
+</RelativeLayout>

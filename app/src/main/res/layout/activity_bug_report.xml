@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UI.BugReport">
+
+    <TextView
+        android:id="@+id/bugSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:text="Report Bug Section"
+        android:textColor="#df6d84"
+        android:textSize="30sp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/bug_border"
+        android:hint="Title"
+        android:text=""
+        android:id="@+id/bugTitle"
+        />
+
+    <EditText
+        android:hint="Your experiment ..."
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="top"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:text=""
+        android:id="@+id/bugContent"
+        android:background="@drawable/bug_border" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:text="Submit"
+        android:textSize="20sp"
+        android:background="#34758b"
+        android:textColor="#ffff"
+        android:id="@+id/bugSubmit" />
+
+</LinearLayout>

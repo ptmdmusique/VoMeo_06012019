@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/qna"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/question"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_margin="20dp"
+            android:textSize="26sp"
+            android:textAlignment="center"
+            android:text="question"
+            android:textAllCaps="true"/>
+
+        <EditText
+            android:id="@+id/answer"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/question"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="5dp"
+            android:text="answer input here"/>
+
+        <ImageButton
+            android:id="@+id/button_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/answer"
+            android:layout_centerInParent="true"
+            android:background="@null"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/next_arrow" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/flashcard_layout">
+
+    <ImageButton
+        android:id="@+id/button_repeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:onClick="onClick"
+        android:src="@drawable/loop"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        />
+    <ImageButton
+        android:id="@+id/button_shuffle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:onClick="onClick"
+        android:src="@drawable/shuffle"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@id/button_repeat"
+        />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:id="@+id/flashcard_list"
+        android:layout_below="@id/button_repeat">
+    </ListView>
+</RelativeLayout>
